@@ -176,6 +176,7 @@ $(function() {
   }
   $(".show-emoji").on("click", function() {
     $('div.emoji-menu').removeClass("hide");
+    $("div.mobile_scrollable_wrap").html("");
     $("div.mobile_scrollable_wrap").append(showEmoji('normal'));
   });
   $(document).mouseup(function(e) {
@@ -207,6 +208,7 @@ $(function() {
     $(".emoji-content").val(content);
     $('div.emoji-menu').addClass("hide")
   });
+
   $(document).ready(function(){
     var btn = $(".show-emoji");
     var elem = "<div class=\"emoji-menu hide\" style=\"z-index: 5002; position: absolute; background-color:#fff; width: 480px; height:228px\">"+
